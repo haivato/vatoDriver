@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="FoodAddressTableViewCell" customModule="Driver_DEV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="491/1, Đường Lê Văn Lương, Phường T..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAK-il-yhb">
+                        <rect key="frame" x="48" y="16" width="252" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pickupMarkerSmall" translatesAutoresizingMaskIntoConstraints="NO" id="czo-sc-jTr">
+                        <rect key="frame" x="16" y="18" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="3dV-oE-UV2"/>
+                            <constraint firstAttribute="width" constant="16" id="j9g-a8-Htx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quận 5, Quận 5 Hồ Chí Minh Vietnam ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3j-9L-uHx">
+                        <rect key="frame" x="48" y="51.5" width="252" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="destinationMarkerSmall" translatesAutoresizingMaskIntoConstraints="NO" id="Oj1-Y5-97b">
+                        <rect key="frame" x="16" y="53.5" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="MeH-pl-QGa"/>
+                            <constraint firstAttribute="width" constant="16" id="Pol-F7-LfD"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_vertical_4dots" translatesAutoresizingMaskIntoConstraints="NO" id="ZM3-zt-4lB">
+                        <rect key="frame" x="23.5" y="36" width="1" height="15.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="9nd-DM-zjf"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="HAK-il-yhb" firstAttribute="centerY" secondItem="czo-sc-jTr" secondAttribute="centerY" id="6iF-ic-Lwf"/>
+                    <constraint firstItem="Oj1-Y5-97b" firstAttribute="top" secondItem="ZM3-zt-4lB" secondAttribute="bottom" constant="2" id="DyK-W6-VLV"/>
+                    <constraint firstAttribute="trailing" secondItem="HAK-il-yhb" secondAttribute="trailing" constant="20" id="MmY-47-cei"/>
+                    <constraint firstItem="X3j-9L-uHx" firstAttribute="centerY" secondItem="Oj1-Y5-97b" secondAttribute="centerY" id="WU4-s4-chT"/>
+                    <constraint firstItem="Oj1-Y5-97b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="bhw-gL-9fc"/>
+                    <constraint firstItem="ZM3-zt-4lB" firstAttribute="centerX" secondItem="czo-sc-jTr" secondAttribute="centerX" id="cMK-ot-HHz"/>
+                    <constraint firstAttribute="trailing" secondItem="X3j-9L-uHx" secondAttribute="trailing" constant="20" id="cpP-vX-1hB"/>
+                    <constraint firstItem="ZM3-zt-4lB" firstAttribute="top" secondItem="czo-sc-jTr" secondAttribute="bottom" constant="2" id="dLg-MG-KEs"/>
+                    <constraint firstItem="X3j-9L-uHx" firstAttribute="leading" secondItem="Oj1-Y5-97b" secondAttribute="trailing" constant="16" id="esh-fE-Hnz"/>
+                    <constraint firstAttribute="bottom" secondItem="X3j-9L-uHx" secondAttribute="bottom" constant="16" id="jfJ-yD-PpD"/>
+                    <constraint firstItem="HAK-il-yhb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="ku6-ox-rUi"/>
+                    <constraint firstItem="HAK-il-yhb" firstAttribute="leading" secondItem="czo-sc-jTr" secondAttribute="trailing" constant="16" id="rpm-oK-eHl"/>
+                    <constraint firstItem="czo-sc-jTr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="wUZ-Nq-ZEG"/>
+                    <constraint firstItem="X3j-9L-uHx" firstAttribute="top" secondItem="HAK-il-yhb" secondAttribute="bottom" constant="16" id="xb9-wu-oNh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="destinationLabel" destination="X3j-9L-uHx" id="lUv-a0-e6v"/>
+                <outlet property="pickupLabel" destination="HAK-il-yhb" id="uCi-u3-PH8"/>
+            </connections>
+            <point key="canvasLocation" x="-46.376811594202906" y="42.522321428571423"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="destinationMarkerSmall" width="16" height="18"/>
+        <image name="ic_vertical_4dots" width="2" height="20"/>
+        <image name="pickupMarkerSmall" width="16" height="16"/>
+    </resources>
+</document>

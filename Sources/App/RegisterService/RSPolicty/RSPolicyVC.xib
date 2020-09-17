@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RSPolicyVC">
+            <connections>
+                <outlet property="btCheck" destination="LPd-6b-eJQ" id="0J5-2u-Oap"/>
+                <outlet property="btConfirm" destination="49a-lB-DCD" id="h73-k6-65G"/>
+                <outlet property="containerView" destination="nvq-eY-03s" id="cBI-1y-db3"/>
+                <outlet property="lbPolicy" destination="6Ve-Nv-Pvx" id="aDe-3U-YaF"/>
+                <outlet property="vBottom" destination="DKM-51-Po5" id="slX-Sj-tqP"/>
+                <outlet property="view" destination="iN0-l3-epB" id="YGp-pt-YVy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKM-51-Po5">
+                    <rect key="frame" x="0.0" y="406" width="320" height="162"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49a-lB-DCD">
+                            <rect key="frame" x="16" y="72" width="288" height="48"/>
+                            <color key="backgroundColor" red="0.81568627450980391" green="0.83137254901960778" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="slE-ka-ae8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <state key="normal" title="Xác nhận gửi yêu cầu">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="24"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPd-6b-eJQ">
+                            <rect key="frame" x="16" y="16" width="22" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="Taz-Vb-vth"/>
+                                <constraint firstAttribute="width" constant="22" id="WWt-4Z-rvX"/>
+                            </constraints>
+                            <state key="normal" image="ic_form_checkbox_uncheck"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xác nhận đã đọc các thông tin trên" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ve-Nv-Pvx">
+                            <rect key="frame" x="54" y="17.5" width="256" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="6Ve-Nv-Pvx" firstAttribute="leading" secondItem="LPd-6b-eJQ" secondAttribute="trailing" constant="16" id="9di-k0-B2I"/>
+                        <constraint firstAttribute="height" constant="162" id="KSd-p9-2W2"/>
+                        <constraint firstItem="LPd-6b-eJQ" firstAttribute="leading" secondItem="DKM-51-Po5" secondAttribute="leading" constant="16" id="Xch-lf-974"/>
+                        <constraint firstItem="6Ve-Nv-Pvx" firstAttribute="centerY" secondItem="LPd-6b-eJQ" secondAttribute="centerY" id="ccX-m0-eOL"/>
+                        <constraint firstItem="LPd-6b-eJQ" firstAttribute="top" secondItem="DKM-51-Po5" secondAttribute="top" constant="16" id="cyE-nU-pQ1"/>
+                        <constraint firstAttribute="trailing" secondItem="6Ve-Nv-Pvx" secondAttribute="trailing" constant="10" id="gZf-Tx-XN8"/>
+                        <constraint firstAttribute="trailing" secondItem="49a-lB-DCD" secondAttribute="trailing" constant="16" id="nmf-kx-bnR"/>
+                        <constraint firstItem="49a-lB-DCD" firstAttribute="leading" secondItem="DKM-51-Po5" secondAttribute="leading" constant="16" id="oRq-j3-iw5"/>
+                        <constraint firstAttribute="bottom" secondItem="49a-lB-DCD" secondAttribute="bottom" constant="42" id="rnY-13-GTY"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nvq-eY-03s">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="396"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="DKM-51-Po5" firstAttribute="top" secondItem="nvq-eY-03s" secondAttribute="bottom" constant="10" id="0pJ-w8-fOm"/>
+                <constraint firstItem="nvq-eY-03s" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="E9E-ll-yGe"/>
+                <constraint firstItem="DKM-51-Po5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FBf-YA-07a"/>
+                <constraint firstAttribute="trailing" secondItem="nvq-eY-03s" secondAttribute="trailing" id="LZH-Xt-Zcr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DKM-51-Po5" secondAttribute="trailing" id="PlG-cV-Opl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="DKM-51-Po5" secondAttribute="bottom" id="mrD-jp-zw0"/>
+                <constraint firstItem="nvq-eY-03s" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pcq-Vl-wyD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="39.90147783251232"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_form_checkbox_uncheck" width="22" height="22"/>
+    </resources>
+</document>

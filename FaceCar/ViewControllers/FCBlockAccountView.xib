@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FCBlockAccountView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TM9-Qg-5PY">
+                    <rect key="frame" x="15" y="70" width="345" height="73.5"/>
+                    <color key="backgroundColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsX-bW-HlD">
+                    <rect key="frame" x="15" y="70" width="345" height="73.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">
+Tài khoản bị tạm khóa.  </string>
+                            <attributes>
+                                <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" metaFont="system" size="17"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">Bạn vui lòng liên hệ 1900.0004 để được hỗ trợ
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.87608371003660701" green="0.92935490608215332" blue="0.87665450411947654" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" size="14" name=".SFNSText"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="nsX-bW-HlD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="70" id="10B-Kl-jPb"/>
+                <constraint firstItem="TM9-Qg-5PY" firstAttribute="trailing" secondItem="nsX-bW-HlD" secondAttribute="trailing" id="91B-5A-eHR"/>
+                <constraint firstItem="nsX-bW-HlD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="MtA-48-yDT"/>
+                <constraint firstItem="TM9-Qg-5PY" firstAttribute="leading" secondItem="nsX-bW-HlD" secondAttribute="leading" id="NtN-y6-oaM"/>
+                <constraint firstItem="TM9-Qg-5PY" firstAttribute="height" secondItem="nsX-bW-HlD" secondAttribute="height" id="m7b-we-67Z"/>
+                <constraint firstItem="TM9-Qg-5PY" firstAttribute="top" secondItem="nsX-bW-HlD" secondAttribute="top" id="nzQ-px-yS3"/>
+                <constraint firstAttribute="trailing" secondItem="nsX-bW-HlD" secondAttribute="trailing" constant="15" id="pm4-DU-Slp"/>
+            </constraints>
+            <connections>
+                <outlet property="backgroun" destination="TM9-Qg-5PY" id="EsD-v9-lhX"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

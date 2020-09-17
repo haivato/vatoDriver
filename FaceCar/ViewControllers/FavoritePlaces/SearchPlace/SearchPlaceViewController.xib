@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchPlaceViewController" customModule="Driver_DEV" customModuleProvider="target">
+            <connections>
+                <outlet property="textField" destination="wjL-zQ-Mzy" id="ez4-kc-us0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewContent" destination="3qy-32-gOa" id="ciL-kF-zCB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z66-ae-nD1">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bu5-mh-c0X">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập địa chỉ tìm kiếm" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="wjL-zQ-Mzy">
+                                    <rect key="frame" x="17" y="0.0" width="341" height="56"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="56" id="Aut-1j-RZD"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="wjL-zQ-Mzy" secondAttribute="trailing" constant="17" id="CIM-hU-9dJ"/>
+                                <constraint firstItem="wjL-zQ-Mzy" firstAttribute="top" secondItem="bu5-mh-c0X" secondAttribute="top" id="Gaw-Zy-wvq"/>
+                                <constraint firstItem="wjL-zQ-Mzy" firstAttribute="leading" secondItem="bu5-mh-c0X" secondAttribute="leading" constant="17" id="fnN-NQ-d0W"/>
+                                <constraint firstAttribute="bottom" secondItem="wjL-zQ-Mzy" secondAttribute="bottom" id="gLu-Ja-SKU"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3qy-32-gOa">
+                            <rect key="frame" x="0.0" y="61" width="375" height="586"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="bu5-mh-c0X" secondAttribute="trailing" id="1iE-gh-aiJ"/>
+                        <constraint firstItem="bu5-mh-c0X" firstAttribute="leading" secondItem="z66-ae-nD1" secondAttribute="leading" id="Inf-bM-b5h"/>
+                        <constraint firstAttribute="trailing" secondItem="3qy-32-gOa" secondAttribute="trailing" id="MHL-1P-HCg"/>
+                        <constraint firstItem="3qy-32-gOa" firstAttribute="leading" secondItem="z66-ae-nD1" secondAttribute="leading" id="SrR-FL-htk"/>
+                        <constraint firstAttribute="bottom" secondItem="3qy-32-gOa" secondAttribute="bottom" id="Vlx-q6-1Nu"/>
+                        <constraint firstItem="bu5-mh-c0X" firstAttribute="top" secondItem="z66-ae-nD1" secondAttribute="top" id="d98-FJ-hrb"/>
+                        <constraint firstItem="3qy-32-gOa" firstAttribute="top" secondItem="bu5-mh-c0X" secondAttribute="bottom" constant="5" id="wcI-i5-ojQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="z66-ae-nD1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ddq-U2-1I3"/>
+                <constraint firstItem="z66-ae-nD1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Rp2-BD-9Df"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="z66-ae-nD1" secondAttribute="bottom" id="gP2-A9-rPs"/>
+                <constraint firstAttribute="trailing" secondItem="z66-ae-nD1" secondAttribute="trailing" id="t7C-0L-fdY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+</document>

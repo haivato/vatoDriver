@@ -1,0 +1,6 @@
+framework module Pods_FC_DEV {
+  umbrella header "Pods-FC DEV-umbrella.h"
+
+  export *
+  module * { export * }
+}

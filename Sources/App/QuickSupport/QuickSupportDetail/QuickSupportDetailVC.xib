@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuickSupportDetailVC">
+            <connections>
+                <outlet property="_inputView" destination="aqk-lT-wCU" id="ORS-aR-QVT"/>
+                <outlet property="bottomTextView" destination="Ve8-NF-0nU" id="a8L-d8-Kcd"/>
+                <outlet property="sendButton" destination="Evx-iI-3sd" id="izB-Ob-ofO"/>
+                <outlet property="textView" destination="ncF-4T-HiF" id="t22-Nk-2pQ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="YGp-pt-YVy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aqk-lT-wCU">
+                    <rect key="frame" x="0.0" y="715" width="375" height="63"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Evx-iI-3sd">
+                            <rect key="frame" x="311" y="5" width="48" height="48"/>
+                            <color key="backgroundColor" red="0.93403202295303345" green="0.32500618696212769" blue="0.13321530818939209" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="9Lx-Mh-ujy"/>
+                                <constraint firstAttribute="width" constant="48" id="gPK-JT-vpz"/>
+                            </constraints>
+                            <state key="normal" image="ic_send_message"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="24"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1000" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ncF-4T-HiF" customClass="InputAutoResizeView" customModule="Driver_DEV" customModuleProvider="target">
+                            <rect key="frame" x="10" y="5" width="293" height="58"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="minH">
+                                    <real key="value" value="58"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maxH">
+                                    <real key="value" value="288"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Nhập để gởi tin nhắn"/>
+                            </userDefinedRuntimeAttributes>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ncF-4T-HiF" firstAttribute="leading" secondItem="aqk-lT-wCU" secondAttribute="leading" constant="10" id="7k9-dx-i9V"/>
+                        <constraint firstAttribute="bottom" secondItem="ncF-4T-HiF" secondAttribute="bottom" id="FfK-Lg-Hoq"/>
+                        <constraint firstAttribute="bottom" secondItem="Evx-iI-3sd" secondAttribute="bottom" constant="10" id="a5o-jo-BRn"/>
+                        <constraint firstAttribute="trailing" secondItem="Evx-iI-3sd" secondAttribute="trailing" constant="16" id="aSa-ti-QBv"/>
+                        <constraint firstAttribute="trailing" secondItem="ncF-4T-HiF" secondAttribute="trailing" constant="72" id="ffg-X1-jBi"/>
+                        <constraint firstItem="ncF-4T-HiF" firstAttribute="top" secondItem="aqk-lT-wCU" secondAttribute="top" constant="5" id="fgj-d2-NXE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="aqk-lT-wCU" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Ve8-NF-0nU"/>
+                <constraint firstAttribute="trailing" secondItem="aqk-lT-wCU" secondAttribute="trailing" id="fXD-ub-LTf"/>
+                <constraint firstItem="aqk-lT-wCU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ifv-eY-DlG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="39.90147783251232"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_send_message" width="24" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module KeyPathKit {
+  umbrella header "KeyPathKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

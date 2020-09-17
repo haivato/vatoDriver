@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="437" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f81-KV-nUs">
+                    <rect key="frame" x="5" y="5" width="165" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="f81-KV-nUs" secondAttribute="height" multiplier="1.5" id="e5l-cj-1XJ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên xe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThP-ae-zSp">
+                    <rect key="frame" x="180" y="5" width="41.5" height="16.5"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Morning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zp-PH-uTU">
+                    <rect key="frame" x="180" y="26.5" width="64" height="20"/>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Biển số xe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ced-cv-slv">
+                    <rect key="frame" x="180" y="56.5" width="64.5" height="16.5"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="47L1-12345" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGq-MR-ZCu">
+                    <rect key="frame" x="180" y="78" width="94" height="20"/>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="f81-KV-nUs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="83p-CA-b1b"/>
+                <constraint firstItem="ced-cv-slv" firstAttribute="top" secondItem="6zp-PH-uTU" secondAttribute="bottom" constant="10" id="9sE-V7-4RU"/>
+                <constraint firstItem="f81-KV-nUs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="BUQ-Ax-3r0"/>
+                <constraint firstItem="6zp-PH-uTU" firstAttribute="top" secondItem="ThP-ae-zSp" secondAttribute="bottom" constant="5" id="EGi-Yw-jbf"/>
+                <constraint firstItem="ThP-ae-zSp" firstAttribute="top" secondItem="f81-KV-nUs" secondAttribute="top" id="FUd-2R-3Ns"/>
+                <constraint firstItem="ThP-ae-zSp" firstAttribute="leading" secondItem="f81-KV-nUs" secondAttribute="trailing" constant="10" id="Gkc-ch-S9q"/>
+                <constraint firstItem="aGq-MR-ZCu" firstAttribute="top" secondItem="ced-cv-slv" secondAttribute="bottom" constant="5" id="M85-Q5-GRX"/>
+                <constraint firstAttribute="bottom" secondItem="f81-KV-nUs" secondAttribute="bottom" constant="5" id="VVI-Ly-SMy"/>
+                <constraint firstItem="ced-cv-slv" firstAttribute="leading" secondItem="6zp-PH-uTU" secondAttribute="leading" id="ZWk-ze-1dB"/>
+                <constraint firstItem="aGq-MR-ZCu" firstAttribute="leading" secondItem="ced-cv-slv" secondAttribute="leading" id="pqt-KI-lAR"/>
+                <constraint firstItem="6zp-PH-uTU" firstAttribute="leading" secondItem="ThP-ae-zSp" secondAttribute="leading" id="rJa-3i-aC0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="63.5" y="-168.5"/>
+        </view>
+    </objects>
+</document>

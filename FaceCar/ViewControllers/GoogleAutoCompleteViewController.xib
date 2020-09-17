@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GoogleAutoCompleteViewController">
+            <connections>
+                <outlet property="btnBack" destination="0qk-7W-Wr3" id="oWw-Ik-Ws9"/>
+                <outlet property="searchBar" destination="PGo-rt-itt" id="M4e-aO-l9i"/>
+                <outlet property="tableView" destination="3PP-qM-HhJ" id="spF-aO-bDF"/>
+                <outlet property="view" destination="iN0-l3-epB" id="1aE-zi-2el"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZt-0C-BjI">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <color key="backgroundColor" red="0.0" green="0.3803921569" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qk-7W-Wr3">
+                    <rect key="frame" x="0.0" y="20" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Tb4-xm-cMa"/>
+                        <constraint firstAttribute="width" constant="45" id="gVG-qp-iC6"/>
+                    </constraints>
+                    <state key="normal" image="close-w"/>
+                    <connections>
+                        <action selector="backPressed:" destination="-1" eventType="touchUpInside" id="YPw-dA-8Co"/>
+                    </connections>
+                </button>
+                <searchBar contentMode="redraw" searchBarStyle="prominent" placeholder="Bạn muốn đi đâu ?" translatesAutoresizingMaskIntoConstraints="NO" id="PGo-rt-itt">
+                    <rect key="frame" x="45" y="20" width="330" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="BAk-kJ-Pdz"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.0" green="0.3803921569" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <scopeButtonTitles>
+                        <string>Title</string>
+                        <string>Title</string>
+                    </scopeButtonTitles>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="3PP-qM-HhJ">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PGo-rt-itt" firstAttribute="top" secondItem="0qk-7W-Wr3" secondAttribute="top" id="5iN-QF-jV6"/>
+                <constraint firstAttribute="trailing" secondItem="PGo-rt-itt" secondAttribute="trailing" id="Emo-Mh-Np6"/>
+                <constraint firstItem="3PP-qM-HhJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Pqu-eq-pZd"/>
+                <constraint firstItem="3PP-qM-HhJ" firstAttribute="top" secondItem="hZt-0C-BjI" secondAttribute="bottom" id="YtF-iQ-ujh"/>
+                <constraint firstAttribute="bottom" secondItem="3PP-qM-HhJ" secondAttribute="bottom" id="avW-F7-Mhi"/>
+                <constraint firstItem="0qk-7W-Wr3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="dtg-BX-aSk"/>
+                <constraint firstItem="PGo-rt-itt" firstAttribute="leading" secondItem="0qk-7W-Wr3" secondAttribute="trailing" id="fkU-EK-5LC"/>
+                <constraint firstAttribute="trailing" secondItem="hZt-0C-BjI" secondAttribute="trailing" id="kcU-DS-a8B"/>
+                <constraint firstItem="hZt-0C-BjI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="m2k-by-eus"/>
+                <constraint firstAttribute="trailing" secondItem="3PP-qM-HhJ" secondAttribute="trailing" id="mBP-AS-qw6"/>
+                <constraint firstItem="3PP-qM-HhJ" firstAttribute="top" secondItem="PGo-rt-itt" secondAttribute="bottom" id="oBC-xe-7lG"/>
+                <constraint firstItem="hZt-0C-BjI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oGG-J6-q64"/>
+                <constraint firstItem="0qk-7W-Wr3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ujl-kj-yk0"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close-w" width="25" height="25"/>
+    </resources>
+</document>

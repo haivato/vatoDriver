@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="AddImageCell" customModule="Driver_DEV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="153" height="149"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="153" height="149"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSv-GJ-eqJ">
+                        <rect key="frame" x="4" y="4" width="145" height="141"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HRa-QE-Muy">
+                                <rect key="frame" x="0.0" y="0.0" width="145" height="141"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXS-Ig-j5M">
+                                <rect key="frame" x="106" y="-5" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="c4O-8k-vhH"/>
+                                    <constraint firstAttribute="width" constant="44" id="jbI-Ro-QVg"/>
+                                </constraints>
+                                <state key="normal" image="iconFormClearPhoto"/>
+                                <connections>
+                                    <action selector="didTouchClear:" destination="gTV-IL-0wX" eventType="touchUpInside" id="f7O-ZX-pnd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HRa-QE-Muy" firstAttribute="leading" secondItem="FSv-GJ-eqJ" secondAttribute="leading" id="0qp-js-ip8"/>
+                            <constraint firstAttribute="trailing" secondItem="HRa-QE-Muy" secondAttribute="trailing" id="4o8-F2-qBA"/>
+                            <constraint firstItem="HRa-QE-Muy" firstAttribute="top" secondItem="FSv-GJ-eqJ" secondAttribute="top" id="7cE-Yh-N5O"/>
+                            <constraint firstAttribute="trailing" secondItem="yXS-Ig-j5M" secondAttribute="trailing" constant="-5" id="V7z-th-D0j"/>
+                            <constraint firstAttribute="bottom" secondItem="HRa-QE-Muy" secondAttribute="bottom" id="XXR-E1-oSi"/>
+                            <constraint firstItem="yXS-Ig-j5M" firstAttribute="top" secondItem="FSv-GJ-eqJ" secondAttribute="top" constant="-5" id="vQN-bw-Emd"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="FSv-GJ-eqJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="5HI-Kx-kbU"/>
+                <constraint firstAttribute="bottom" secondItem="FSv-GJ-eqJ" secondAttribute="bottom" constant="4" id="7Xb-sI-mAL"/>
+                <constraint firstItem="FSv-GJ-eqJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="i7I-88-RhE"/>
+                <constraint firstAttribute="trailing" secondItem="FSv-GJ-eqJ" secondAttribute="trailing" constant="4" id="zZo-Gr-qfA"/>
+            </constraints>
+            <size key="customSize" width="153" height="149"/>
+            <connections>
+                <outlet property="buttonClear" destination="yXS-Ig-j5M" id="uA0-Bd-jfa"/>
+                <outlet property="imageView" destination="HRa-QE-Muy" id="URr-82-KS1"/>
+            </connections>
+            <point key="canvasLocation" x="210.86956521739131" y="155.69196428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="iconFormClearPhoto" width="22" height="22"/>
+    </resources>
+</document>

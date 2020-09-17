@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TaxiRequestSuccess" customModule="Driver_DEV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="168"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYy-es-0le">
+                    <rect key="frame" x="0.0" y="0.0" width="343" height="168"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwf-bk-c3F">
+                            <rect key="frame" x="40" y="12" width="263" height="66"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xếp tài Vạn Hạnh Mall thành công" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olp-3a-FZ3">
+                                    <rect key="frame" x="12" y="12" width="239" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <color key="textColor" red="0.29803921568627451" green="0.70980392156862748" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="Số tài:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9G9-1x-PL1">
+                                    <rect key="frame" x="12" y="37" width="41" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.38823529410000002" green="0.44705882349999998" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Hàng đợi - #1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgs-uv-EEm">
+                                    <rect key="frame" x="61" y="37" width="190" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="Olp-3a-FZ3" firstAttribute="top" secondItem="rwf-bk-c3F" secondAttribute="top" constant="12" id="5Zl-Y3-sSR"/>
+                                <constraint firstItem="zgs-uv-EEm" firstAttribute="leading" secondItem="9G9-1x-PL1" secondAttribute="trailing" constant="8" id="980-0s-1Ov"/>
+                                <constraint firstItem="9G9-1x-PL1" firstAttribute="leading" secondItem="rwf-bk-c3F" secondAttribute="leading" constant="12" id="VBd-Hh-49f"/>
+                                <constraint firstItem="9G9-1x-PL1" firstAttribute="top" secondItem="Olp-3a-FZ3" secondAttribute="bottom" constant="8" id="X2B-su-xd4"/>
+                                <constraint firstItem="zgs-uv-EEm" firstAttribute="top" secondItem="Olp-3a-FZ3" secondAttribute="bottom" constant="8" id="Y3W-i5-NAb"/>
+                                <constraint firstAttribute="bottom" secondItem="zgs-uv-EEm" secondAttribute="bottom" constant="12" id="kw6-96-lfa"/>
+                                <constraint firstItem="Olp-3a-FZ3" firstAttribute="leading" secondItem="rwf-bk-c3F" secondAttribute="leading" constant="12" id="lCJ-71-Pao"/>
+                                <constraint firstAttribute="trailing" secondItem="Olp-3a-FZ3" secondAttribute="trailing" constant="12" id="oy6-je-ChA"/>
+                                <constraint firstAttribute="trailing" secondItem="zgs-uv-EEm" secondAttribute="trailing" constant="12" id="pEO-Ag-Pot"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="rwf-bk-c3F" firstAttribute="leading" secondItem="mYy-es-0le" secondAttribute="leading" constant="40" id="Lvb-Xd-Ygu"/>
+                        <constraint firstItem="rwf-bk-c3F" firstAttribute="top" secondItem="mYy-es-0le" secondAttribute="top" constant="12" id="VMB-kx-aYC"/>
+                        <constraint firstAttribute="trailing" secondItem="rwf-bk-c3F" secondAttribute="trailing" constant="40" id="a38-Gk-QGq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mYy-es-0le" secondAttribute="trailing" id="DJW-SD-2mV"/>
+                <constraint firstItem="mYy-es-0le" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HGR-mr-V86"/>
+                <constraint firstItem="mYy-es-0le" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="MSn-7a-8FQ"/>
+                <constraint firstItem="mYy-es-0le" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="pcY-x0-mWD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="indexLabel" destination="zgs-uv-EEm" id="iZU-cY-8uH"/>
+                <outlet property="titleLabel" destination="Olp-3a-FZ3" id="1eV-l6-inY"/>
+            </connections>
+            <point key="canvasLocation" x="86.231884057971016" y="343.52678571428572"/>
+        </view>
+    </objects>
+</document>

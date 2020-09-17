@@ -1,0 +1,11 @@
+framework module VatoPasswordIdentiy {
+  umbrella header "VatoPasswordIdentiy.h"
+
+  export *
+  module * { export * }
+}
+
+module VatoPasswordIdentiy.Swift {
+    header "VatoPasswordIdentiy-Swift.h"
+    requires objc
+}

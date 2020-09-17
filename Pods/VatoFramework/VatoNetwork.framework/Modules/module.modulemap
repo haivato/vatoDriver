@@ -1,0 +1,11 @@
+framework module VatoNetwork {
+  umbrella header "VatoNetwork.h"
+
+  export *
+  module * { export * }
+}
+
+module VatoNetwork.Swift {
+    header "VatoNetwork-Swift.h"
+    requires objc
+}

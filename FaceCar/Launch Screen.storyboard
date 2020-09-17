@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeQ-6g-Kcb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_splashcreen" translatesAutoresizingMaskIntoConstraints="NO" id="3FP-BA-mcW">
+                                        <rect key="frame" x="0.0" y="144" width="320" height="336"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="img_login_vato_logo_new" translatesAutoresizingMaskIntoConstraints="NO" id="dm4-ua-fDW">
+                                        <rect key="frame" x="54" y="120" width="212" height="84"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo_futa" translatesAutoresizingMaskIntoConstraints="NO" id="W7z-bW-83P">
+                                        <rect key="frame" x="49" y="306" width="222" height="118"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.38039215686274508" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dm4-ua-fDW" firstAttribute="top" secondItem="jeQ-6g-Kcb" secondAttribute="bottom" multiplier="0.25" id="45m-AF-6Hy"/>
+                                    <constraint firstItem="3FP-BA-mcW" firstAttribute="height" secondItem="jeQ-6g-Kcb" secondAttribute="height" multiplier="0.7" id="ETE-fe-y7H"/>
+                                    <constraint firstItem="3FP-BA-mcW" firstAttribute="trailing" secondItem="nLQ-nQ-xbS" secondAttribute="trailing" id="PTE-4Y-T88"/>
+                                    <constraint firstItem="dm4-ua-fDW" firstAttribute="centerX" secondItem="nLQ-nQ-xbS" secondAttribute="centerX" id="bBt-Cw-mvU"/>
+                                    <constraint firstItem="W7z-bW-83P" firstAttribute="centerX" secondItem="nLQ-nQ-xbS" secondAttribute="centerX" id="dQG-PS-v6L"/>
+                                    <constraint firstAttribute="bottom" secondItem="3FP-BA-mcW" secondAttribute="bottom" id="fFm-qO-Vul"/>
+                                    <constraint firstAttribute="bottom" secondItem="W7z-bW-83P" secondAttribute="bottom" constant="56" id="ubF-gd-Icf"/>
+                                    <constraint firstItem="3FP-BA-mcW" firstAttribute="leading" secondItem="nLQ-nQ-xbS" secondAttribute="leading" id="ul5-BY-F6H"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="nLQ-nQ-xbS"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jeQ-6g-Kcb" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="HAq-6w-7Vl"/>
+                            <constraint firstAttribute="bottom" secondItem="jeQ-6g-Kcb" secondAttribute="bottom" id="eJd-QK-PRf"/>
+                            <constraint firstItem="jeQ-6g-Kcb" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="jkE-JG-exc"/>
+                            <constraint firstItem="jeQ-6g-Kcb" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="kfM-4K-mnL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_logo_futa" width="222" height="118"/>
+        <image name="img_login_vato_logo_new" width="212" height="84"/>
+        <image name="img_splashcreen" width="375" height="470"/>
+    </resources>
+</document>

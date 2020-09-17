@@ -1,0 +1,11 @@
+framework module SMSVatoAuthen {
+  umbrella header "SMSVatoAuthen.h"
+
+  export *
+  module * { export * }
+}
+
+module SMSVatoAuthen.Swift {
+    header "SMSVatoAuthen-Swift.h"
+    requires objc
+}

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TripMapSupplyInfoView" customModule="Driver_DEV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="166"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Wt5-4t-Z6D">
+                    <rect key="frame" x="16" y="0.0" width="293" height="54.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1000" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ghe-JK-ivh">
+                            <rect key="frame" x="0.0" y="0.0" width="293" height="33.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfP-QC-Aj8">
+                                    <rect key="frame" x="0.0" y="0.0" width="293" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1000" text="(Khách sẽ hoàn tiền mặt)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyJ-FR-mT5">
+                                    <rect key="frame" x="0.0" y="19" width="293" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QS-Fm-2nT">
+                            <rect key="frame" x="0.0" y="37.5" width="293" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7jx-RF-E9H">
+                    <rect key="frame" x="319" y="30.5" width="87" height="24"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="250" text="Xem thêm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10q-Ne-sdp">
+                            <rect key="frame" x="0.0" y="4" width="63" height="16"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="9do-Vo-lO9">
+                            <rect key="frame" x="63" y="0.0" width="24" height="24"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="Qod-iN-1KK"/>
+                                <constraint firstAttribute="height" constant="24" id="XmZ-Ur-R81"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OX-fY-wma">
+                    <rect key="frame" x="347.5" y="27.5" width="30" height="30"/>
+                </button>
+                <view contentMode="scaleToFill" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1000" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cmf-TH-NyU">
+                    <rect key="frame" x="20" y="70" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="4OX-fY-wma" firstAttribute="width" secondItem="7jx-RF-E9H" secondAttribute="width" multiplier="0.344828" id="DNW-Wt-KTA"/>
+                <constraint firstItem="Wt5-4t-Z6D" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="FnD-8X-0mo"/>
+                <constraint firstItem="7jx-RF-E9H" firstAttribute="bottom" secondItem="Wt5-4t-Z6D" secondAttribute="bottom" id="I1o-2Q-Yms"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7jx-RF-E9H" secondAttribute="trailing" constant="8" id="JDD-hw-P03"/>
+                <constraint firstItem="4OX-fY-wma" firstAttribute="centerY" secondItem="7jx-RF-E9H" secondAttribute="centerY" id="JfA-Vy-y4I"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Wt5-4t-Z6D" secondAttribute="bottom" priority="750" constant="12" id="T4O-HS-4rX"/>
+                <constraint firstItem="4OX-fY-wma" firstAttribute="height" secondItem="7jx-RF-E9H" secondAttribute="height" multiplier="1.25" id="ZUi-Vd-cwE"/>
+                <constraint firstItem="7jx-RF-E9H" firstAttribute="leading" secondItem="Wt5-4t-Z6D" secondAttribute="trailing" constant="10" id="bAU-0t-hCr"/>
+                <constraint firstItem="Wt5-4t-Z6D" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nKG-Ps-ySc"/>
+                <constraint firstItem="4OX-fY-wma" firstAttribute="centerX" secondItem="7jx-RF-E9H" secondAttribute="centerX" id="yhD-71-sA7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnReview" destination="4OX-fY-wma" id="Jer-Rb-jeI"/>
+                <outlet property="lblDescription" destination="7QS-Fm-2nT" id="IYB-hE-GSc"/>
+                <outlet property="lblPrice" destination="LfP-QC-Aj8" id="nhL-Sg-SAQ"/>
+            </connections>
+            <point key="canvasLocation" x="191.30434782608697" y="-174.77678571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_arrow_right" width="24" height="24"/>
+    </resources>
+</document>

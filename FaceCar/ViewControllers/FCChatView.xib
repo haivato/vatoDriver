@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FCChatView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ntB-qg-5uW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zbI-nq-raj">
+                            <rect key="frame" x="10" y="30" width="355" height="566"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="separatorColor" red="1" green="0.60668170909999997" blue="0.08087322944" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </tableView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jgo-xW-zdi" customClass="FCTextView">
+                            <rect key="frame" x="10" y="606" width="295" height="36.5"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="iOr-gu-Q66"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" smartQuotesType="no"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Nhập lời nhắn"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="18"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Nhập tin nhắn"/>
+                            </userDefinedRuntimeAttributes>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NzO-ei-0mV" customClass="FCButton">
+                            <rect key="frame" x="315" y="599" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="NzO-ei-0mV" secondAttribute="height" multiplier="1:1" id="D4S-xd-HNO"/>
+                                <constraint firstAttribute="width" constant="50" id="DS3-gs-xOd"/>
+                            </constraints>
+                            <state key="normal" image="chats"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="sendClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="zFZ-Mw-ijN"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TeH-ic-ffZ">
+                            <rect key="frame" x="0.0" y="596" width="375" height="0.5"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="wsJ-vG-abH"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="jgo-xW-zdi" firstAttribute="leading" secondItem="ntB-qg-5uW" secondAttribute="leading" constant="10" id="2hD-OL-TS7"/>
+                        <constraint firstItem="zbI-nq-raj" firstAttribute="top" secondItem="ntB-qg-5uW" secondAttribute="top" constant="30" id="83d-LK-HAF"/>
+                        <constraint firstItem="TeH-ic-ffZ" firstAttribute="leading" secondItem="ntB-qg-5uW" secondAttribute="leading" id="CVG-ei-e76"/>
+                        <constraint firstAttribute="trailing" secondItem="NzO-ei-0mV" secondAttribute="trailing" constant="10" id="EOl-7S-22d"/>
+                        <constraint firstItem="NzO-ei-0mV" firstAttribute="leading" secondItem="jgo-xW-zdi" secondAttribute="trailing" constant="10" id="F7d-WM-gid"/>
+                        <constraint firstAttribute="trailing" secondItem="TeH-ic-ffZ" secondAttribute="trailing" id="FFc-tR-b5F"/>
+                        <constraint firstItem="TeH-ic-ffZ" firstAttribute="top" secondItem="zbI-nq-raj" secondAttribute="bottom" id="MtV-kj-ooK"/>
+                        <constraint firstItem="jgo-xW-zdi" firstAttribute="top" secondItem="zbI-nq-raj" secondAttribute="bottom" constant="10" id="OCf-DF-Uz2"/>
+                        <constraint firstItem="zbI-nq-raj" firstAttribute="leading" secondItem="ntB-qg-5uW" secondAttribute="leading" constant="10" id="Uz7-em-YZA"/>
+                        <constraint firstAttribute="bottom" secondItem="NzO-ei-0mV" secondAttribute="bottom" constant="18" id="eIn-KG-szQ"/>
+                        <constraint firstAttribute="trailing" secondItem="zbI-nq-raj" secondAttribute="trailing" constant="10" id="laJ-p5-74W"/>
+                        <constraint firstItem="NzO-ei-0mV" firstAttribute="centerY" secondItem="jgo-xW-zdi" secondAttribute="centerY" id="w81-DT-DEH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ntB-qg-5uW" secondAttribute="trailing" id="eBJ-mj-X0R"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ntB-qg-5uW" secondAttribute="bottom" id="elA-9c-Cen"/>
+                <constraint firstItem="ntB-qg-5uW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="g8Y-nX-gnc"/>
+                <constraint firstItem="ntB-qg-5uW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="u1p-cz-AJk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bottomContraintView" destination="elA-9c-Cen" id="Zgf-Vx-StT"/>
+                <outlet property="contentView" destination="ntB-qg-5uW" id="X8M-j0-EvO"/>
+                <outlet property="inputView" destination="jgo-xW-zdi" id="I27-2U-5Ie"/>
+                <outlet property="tableView" destination="zbI-nq-raj" id="Xb1-Ru-ZoQ"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chats" width="32.5" height="32.5"/>
+    </resources>
+</document>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FCApplyLoginViewController">
+            <connections>
+                <outlet property="btnPhone" destination="tba-6X-AXa" id="IzF-9j-gvW"/>
+                <outlet property="view" destination="Lpt-fs-Ieb" id="0zA-Yz-xVY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Lpt-fs-Ieb">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="bll-Rl-BzD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LhR-fT-rdh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash-logo" translatesAutoresizingMaskIntoConstraints="NO" id="t6V-4G-fi6">
+                    <rect key="frame" x="128" y="50" width="100" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="eik-P1-Deb"/>
+                        <constraint firstAttribute="height" constant="30" id="qmj-B8-H0o"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tba-6X-AXa">
+                    <rect key="frame" x="15" y="536.5" width="345" height="45"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="PMK-4D-00c"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="68" maxY="0.0"/>
+                    <state key="normal" title="Đăng nhập bằng số điện thoại" image="mobile">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="phoneClicked:" destination="-1" eventType="touchUpInside" id="j6g-hG-gYW"/>
+                    </connections>
+                </button>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lQ-Fx-0du">
+                    <rect key="frame" x="15" y="621.5" width="345" height="30.5"/>
+                    <gestureRecognizers/>
+                    <attributedString key="attributedText">
+                        <fragment content="Để tiếp tục, bạn phải xác nhận rằng bạn đồng ý với ">
+                            <attributes>
+                                <color key="NSColor" red="0.96862745098039216" green="0.99309860592729682" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="các điều khoản">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="NSColor" red="0.25098039215686274" green="0.45882352941176469" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="và">
+                            <attributes>
+                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="nguyên tắc hoạt động">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="0.35546" green="0.64709000000000005" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="NSColor" red="0.25098039215686274" green="0.45882352941176469" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.35546" green="0.64709000000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="của chúng tôi.">
+                            <attributes>
+                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="2Cf-fM-XO6" appends="YES" id="mcN-Hf-nZB"/>
+                    </connections>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="t6V-4G-fi6" firstAttribute="centerX" secondItem="Lpt-fs-Ieb" secondAttribute="centerX" constant="-10" id="0x5-Bq-jjd"/>
+                <constraint firstAttribute="bottom" secondItem="bll-Rl-BzD" secondAttribute="bottom" id="4Ar-eo-66e"/>
+                <constraint firstAttribute="bottom" secondItem="3lQ-Fx-0du" secondAttribute="bottom" constant="15" id="7UC-UM-cwR"/>
+                <constraint firstAttribute="trailing" secondItem="3lQ-Fx-0du" secondAttribute="trailing" constant="15" id="8sa-ye-8NX"/>
+                <constraint firstAttribute="trailing" secondItem="LhR-fT-rdh" secondAttribute="trailing" id="9Yt-jX-sEm"/>
+                <constraint firstItem="bll-Rl-BzD" firstAttribute="top" secondItem="Lpt-fs-Ieb" secondAttribute="top" id="A4D-KQ-any"/>
+                <constraint firstAttribute="trailing" secondItem="tba-6X-AXa" secondAttribute="trailing" constant="15" id="BLm-C9-7ep"/>
+                <constraint firstItem="3lQ-Fx-0du" firstAttribute="leading" secondItem="Lpt-fs-Ieb" secondAttribute="leading" constant="15" id="LRc-ge-f07"/>
+                <constraint firstItem="3lQ-Fx-0du" firstAttribute="top" secondItem="tba-6X-AXa" secondAttribute="bottom" constant="40" id="O82-aa-ydV"/>
+                <constraint firstItem="t6V-4G-fi6" firstAttribute="top" secondItem="Lpt-fs-Ieb" secondAttribute="top" constant="50" id="aol-kw-EMh"/>
+                <constraint firstAttribute="trailing" secondItem="bll-Rl-BzD" secondAttribute="trailing" id="aqk-Ua-3pw"/>
+                <constraint firstItem="LhR-fT-rdh" firstAttribute="top" secondItem="Lpt-fs-Ieb" secondAttribute="top" id="bNr-Qn-Ebm"/>
+                <constraint firstItem="bll-Rl-BzD" firstAttribute="leading" secondItem="Lpt-fs-Ieb" secondAttribute="leading" id="fkE-JZ-GWK"/>
+                <constraint firstItem="LhR-fT-rdh" firstAttribute="leading" secondItem="Lpt-fs-Ieb" secondAttribute="leading" id="jir-Zg-FU4"/>
+                <constraint firstAttribute="bottom" secondItem="LhR-fT-rdh" secondAttribute="bottom" id="vix-FK-0VD"/>
+                <constraint firstItem="tba-6X-AXa" firstAttribute="leading" secondItem="Lpt-fs-Ieb" secondAttribute="leading" constant="15" id="wVP-2g-FGX"/>
+            </constraints>
+        </view>
+        <tapGestureRecognizer id="2Cf-fM-XO6"/>
+    </objects>
+    <resources>
+        <image name="mobile" width="25" height="25"/>
+        <image name="splash" width="359" height="575"/>
+        <image name="splash-logo" width="550" height="130"/>
+    </resources>
+</document>

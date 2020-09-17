@@ -1,0 +1,36 @@
+{
+    "values": [
+        {
+            "id": 1,
+            "title": "1. Hỗ trợ văn phòng",
+            "description": "Các vấn đề về đăng ký, hồ sơ, thay đổi thông tin, rút tiền, hỗ trợ ngân hàng, góp ý",
+            "enable": true
+        },
+        {
+            "id": 2,
+            "title": "2. Hỗ trợ sản phẩm",
+            "description": "Các vấn đề: Không phát cuốc xe, định vị sai, lỗi phần mềm, phát cuốc xa, thiếu thưởng, đánh giá chuyến đi sai",
+            "enable": true
+        },
+        {
+            "id": 3,
+            "title": "3. Hỗ trợ can thiệp",
+            "description": "Khách hàng book ảo, Khách đe dọa, Khách không trả tiền, Bị cướp tài sản, Hành hung,...",
+            "enable": true
+        },
+        {
+            "id": 4,
+            "title": "4. Đánh giá chất lượng dịch vụ",
+            "description": "Đánh giá tốt/xấu, khen/chê cho các dịch vụ Gọi xe, Giao hàng, Mua vé xe Phương Trang, Giao thức ăn, E-Commerce",
+            "enable": true
+        },
+        {
+            "id": 5,
+            "title": "5. Hỗ trợ khác",
+            "description": "Chưa phân loại",
+            "enable": true
+        }
+        
+    ]
+    
+}

@@ -1,0 +1,164 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+lane :dev do
+  # build your iOS app
+  build_number = increment_build_number(
+    build_number: Time.now.strftime("%Y%m%d%H%M")
+  )
+
+  version = get_version_number(
+    xcodeproj: "FC.xcodeproj",
+    target: "FC DEV"
+  )
+
+  notes = release_notes
+
+  build_app(
+    scheme: "FC DEV",
+    workspace: "FC.xcworkspace",
+    include_bitcode: false,
+    export_method: "development"
+  )
+
+  firebase_app_distribution(
+      app: "1:317038682796:ios:1585969d0d5dab91",
+      release_notes: notes,
+      groups: "Tester"
+  )
+  branchName = git_branch
+  discord_notifier(
+    webhook_url:"https://discordapp.com/api/webhooks/747357316730322998/advqE-gmaO2hsd5vM61FgYTiIBHIvmGE56rT0zuL6k6e-8C7YYJnPBc5iJWeiiCsCAL1",
+    title: "iOS Driver DEV new build",
+    description: "A DEV version",
+    fields:[
+      {
+         name: "App Type",
+         value: "Driver Dev"
+      },
+      {
+          name: "Branch",
+          value: branchName
+      },
+      {
+          name: "Where",
+          value: "Firebase App Distribution"
+      },
+      {
+         name: "App Version",
+         value: version
+      },
+      {
+          name: "Build number",
+          value: build_number
+      },
+      {
+          name: "Release Notes",
+          value: notes
+      }
+    ]
+  )
+
+end
+
+lane :production do
+
+  build_number = increment_build_number(
+    build_number: Time.now.strftime("%Y%m%d%H%M")
+  )
+
+  version = get_version_number(
+    xcodeproj: "FC.xcodeproj",
+    target: "FC DEV"
+  )
+  notes = release_notes
+  # build your iOS app
+  build_app(
+    scheme: "FC",
+    workspace: "FC.xcworkspace",
+    include_bitcode: false,
+    export_method: "development"
+  )
+
+  firebase_app_distribution(
+      app: "1:639535783968:ios:25dbedb40966828a",
+      release_notes: notes,
+      groups: "Tester"
+  )
+
+  branchName = git_branch
+  discord_notifier(
+    webhook_url:"https://discordapp.com/api/webhooks/747357316730322998/advqE-gmaO2hsd5vM61FgYTiIBHIvmGE56rT0zuL6k6e-8C7YYJnPBc5iJWeiiCsCAL1",
+    title: "iOS Driver Pro new build",
+    description: "A Pro version",
+    fields:[
+      {
+         name: "App Type",
+         value: "Driver Pro"
+      },
+      {
+          name: "Branch",
+          value: branchName
+      },
+      {
+          name: "Where",
+          value: "Firebase App Distribution"
+      },
+      {
+         name: "App Version",
+         value: version
+      },
+      {
+          name: "Build number",
+          value: build_number
+      },
+      {
+          name: "Release Notes",
+          value: notes
+      }
+    ]
+  )
+
+end
+
+lane :release do
+
+  increment_build_number(
+    build_number: Time.now.strftime("%Y%m%d%H%M")
+  )
+
+  # build your iOS app
+  build_app(
+    scheme: "FC",
+    workspace: "FC.xcworkspace",
+    include_bitcode: false,
+    export_method: "app-store"
+  )
+
+  # upload to Testflight
+  pilot(skip_waiting_for_build_processing: true)
+end
+
+desc "Generate release notes"
+private_lane :release_notes do
+    changelog = changelog_from_git_commits(
+			commits_count: 5,
+			pretty: "- (%ae) %s",
+			date_format: "short",
+			merge_commit_filtering: "exclude_merges")
+    "Automatic build (Last 5 PR):\n#{changelog}"
+end

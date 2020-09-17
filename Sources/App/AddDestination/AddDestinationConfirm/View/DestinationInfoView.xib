@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="DestinationInfoView" customModule="Driver_DEV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="146"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_destination_edit" translatesAutoresizingMaskIntoConstraints="NO" id="qf2-gI-zEp">
+                    <rect key="frame" x="16" y="16" width="16" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="7dw-xL-TM8"/>
+                        <constraint firstAttribute="height" constant="19" id="8rD-5y-Ybb"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JY4-mH-JHc">
+                    <rect key="frame" x="3" y="15.5" width="42" height="20.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1000" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="La0-SB-Ye3">
+                    <rect key="frame" x="44" y="16" width="354" height="39.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agq-48-LwD">
+                            <rect key="frame" x="0.0" y="0.0" width="33" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.38823529410000002" green="0.44705882349999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymv-pI-U76">
+                            <rect key="frame" x="0.0" y="20" width="39.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_dots" translatesAutoresizingMaskIntoConstraints="NO" id="R1e-cQ-3a9">
+                    <rect key="frame" x="23" y="47" width="2" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="2" id="3j5-It-Lhr"/>
+                        <constraint firstAttribute="height" constant="10" id="vyn-uk-gmO"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qf2-gI-zEp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="9be-vb-yvt"/>
+                <constraint firstItem="R1e-cQ-3a9" firstAttribute="centerX" secondItem="qf2-gI-zEp" secondAttribute="centerX" id="Duh-a2-yfb"/>
+                <constraint firstItem="JY4-mH-JHc" firstAttribute="centerX" secondItem="qf2-gI-zEp" secondAttribute="centerX" id="M8N-w0-Syb"/>
+                <constraint firstItem="La0-SB-Ye3" firstAttribute="leading" secondItem="qf2-gI-zEp" secondAttribute="trailing" constant="12" id="Nog-GP-ypj"/>
+                <constraint firstItem="La0-SB-Ye3" firstAttribute="top" secondItem="qf2-gI-zEp" secondAttribute="top" id="SHp-4i-sMB"/>
+                <constraint firstItem="R1e-cQ-3a9" firstAttribute="top" secondItem="qf2-gI-zEp" secondAttribute="bottom" constant="12" id="VGV-IG-oWI"/>
+                <constraint firstItem="JY4-mH-JHc" firstAttribute="height" secondItem="qf2-gI-zEp" secondAttribute="height" multiplier="1.07895" id="ZQt-GI-cAR"/>
+                <constraint firstItem="JY4-mH-JHc" firstAttribute="centerY" secondItem="qf2-gI-zEp" secondAttribute="centerY" id="bJG-13-p7P"/>
+                <constraint firstAttribute="bottom" secondItem="La0-SB-Ye3" secondAttribute="bottom" priority="750" constant="16" id="by9-O8-Eol"/>
+                <constraint firstItem="JY4-mH-JHc" firstAttribute="width" secondItem="qf2-gI-zEp" secondAttribute="width" multiplier="2.625" id="kzN-4v-llG"/>
+                <constraint firstAttribute="trailing" secondItem="La0-SB-Ye3" secondAttribute="trailing" constant="16" id="lWZ-vW-n6p"/>
+                <constraint firstItem="qf2-gI-zEp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="uYa-Gx-JNA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageDotView" destination="R1e-cQ-3a9" id="dSU-2D-msD"/>
+                <outlet property="imageView" destination="qf2-gI-zEp" id="FYz-br-gvx"/>
+                <outlet property="lblAddress" destination="ymv-pI-U76" id="QsH-Vd-GCO"/>
+                <outlet property="lblIndex" destination="JY4-mH-JHc" id="32h-MV-Fnt"/>
+                <outlet property="lblTitle" destination="agq-48-LwD" id="cvA-hg-879"/>
+            </connections>
+            <point key="canvasLocation" x="99" y="-153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_destination_edit" width="16" height="19"/>
+        <image name="ic_dots" width="2" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarContractVC">
+            <connections>
+                <outlet property="btContract" destination="9X1-Qf-yJM" id="mmp-br-Jrj"/>
+                <outlet property="btListRequest" destination="52U-IC-OwZ" id="fS0-Cr-KWy"/>
+                <outlet property="tableView" destination="14T-vc-dsb" id="Y64-Av-15j"/>
+                <outlet property="vHeader" destination="xps-wv-OZg" id="Whh-5s-wsJ"/>
+                <outlet property="vLine" destination="W7X-GF-Ni6" id="NEL-k8-qXo"/>
+                <outlet property="view" destination="iN0-l3-epB" id="YGp-pt-YVy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xps-wv-OZg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6BP-y0-aPv">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52U-IC-OwZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="47"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="47" id="3RX-PA-Q3o"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <state key="normal" title="CHUYẾN SẮP ĐI">
+                                        <color key="titleColor" red="0.38823529410000002" green="0.44705882349999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected">
+                                        <color key="titleColor" red="0.93725490199999995" green="0.32156862749999998" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" red="0.93725490199999995" green="0.32156862749999998" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9X1-Qf-yJM">
+                                    <rect key="frame" x="187.5" y="0.0" width="187.5" height="47"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="47" id="xtG-8k-S7R"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <state key="normal" title="LỊCH SỬ">
+                                        <color key="titleColor" red="0.38823529410000002" green="0.44705882349999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected">
+                                        <color key="titleColor" red="0.93725490199999995" green="0.32156862749999998" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" red="0.93725490199999995" green="0.32156862749999998" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="47" id="4L6-IZ-5Kb"/>
+                            </constraints>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W7X-GF-Ni6">
+                            <rect key="frame" x="0.0" y="46" width="187.5" height="2"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.32156862749999998" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="Opz-tn-IIV"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="6BP-y0-aPv" firstAttribute="leading" secondItem="xps-wv-OZg" secondAttribute="leading" id="9uU-3Z-My0"/>
+                        <constraint firstItem="W7X-GF-Ni6" firstAttribute="leading" secondItem="xps-wv-OZg" secondAttribute="leading" id="KXt-SD-BxY"/>
+                        <constraint firstAttribute="height" constant="48" id="XgZ-GN-JCk"/>
+                        <constraint firstAttribute="trailing" secondItem="6BP-y0-aPv" secondAttribute="trailing" id="ZDk-Wm-qTP"/>
+                        <constraint firstItem="W7X-GF-Ni6" firstAttribute="width" secondItem="xps-wv-OZg" secondAttribute="width" multiplier="0.5" id="qBT-3w-VJx"/>
+                        <constraint firstAttribute="bottom" secondItem="W7X-GF-Ni6" secondAttribute="bottom" id="raz-D7-tFR"/>
+                        <constraint firstItem="6BP-y0-aPv" firstAttribute="top" secondItem="xps-wv-OZg" secondAttribute="top" id="ygA-Y1-L0x"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="14T-vc-dsb">
+                    <rect key="frame" x="0.0" y="48" width="375" height="619"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xps-wv-OZg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Nfk-fu-nrH"/>
+                <constraint firstItem="xps-wv-OZg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="O22-kg-VyG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xps-wv-OZg" secondAttribute="trailing" id="P2r-kH-ByV"/>
+                <constraint firstItem="14T-vc-dsb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WaB-t4-9ur"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="14T-vc-dsb" secondAttribute="trailing" id="rlA-0s-pIE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="14T-vc-dsb" secondAttribute="bottom" id="siP-S9-7h2"/>
+                <constraint firstItem="14T-vc-dsb" firstAttribute="top" secondItem="xps-wv-OZg" secondAttribute="bottom" id="ynl-CB-Sbd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="39.90147783251232"/>
+        </view>
+    </objects>
+</document>

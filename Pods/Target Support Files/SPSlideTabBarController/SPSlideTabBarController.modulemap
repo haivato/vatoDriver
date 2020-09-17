@@ -1,0 +1,6 @@
+framework module SPSlideTabBarController {
+  umbrella header "SPSlideTabBarController-umbrella.h"
+
+  export *
+  module * { export * }
+}

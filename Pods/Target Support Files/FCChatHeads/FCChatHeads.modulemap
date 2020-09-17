@@ -1,0 +1,6 @@
+framework module FCChatHeads {
+  umbrella header "FCChatHeads-umbrella.h"
+
+  export *
+  module * { export * }
+}

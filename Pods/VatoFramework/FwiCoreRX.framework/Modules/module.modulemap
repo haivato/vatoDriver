@@ -1,0 +1,4 @@
+framework module FwiCoreRX {
+  header "FwiCoreRX-Swift.h"
+  requires objc
+}

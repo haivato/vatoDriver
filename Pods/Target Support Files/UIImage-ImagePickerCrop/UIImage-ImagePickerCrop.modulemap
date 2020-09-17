@@ -1,0 +1,6 @@
+framework module UIImage_ImagePickerCrop {
+  umbrella header "UIImage-ImagePickerCrop-umbrella.h"
+
+  export *
+  module * { export * }
+}

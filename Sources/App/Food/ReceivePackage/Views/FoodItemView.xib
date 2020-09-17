@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FoodItemView" customModule="Driver_DEV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bin-8H-cc5">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1x" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2C-C2-Rbz">
+                            <rect key="frame" x="0.0" y="8" width="48" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="mqT-bG-Kgv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Cà phê sữa tươi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrA-LF-F54">
+                            <rect key="frame" x="50" y="8" width="120.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35,000đ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYm-Hv-Lh8">
+                            <rect key="frame" x="336.5" y="8" width="61.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Không đường" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYa-Co-NcZ">
+                            <rect key="frame" x="50" y="30.5" width="348" height="17.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.38823529411764707" green="0.44705882352941173" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="OrA-LF-F54" firstAttribute="top" secondItem="L2C-C2-Rbz" secondAttribute="top" id="89o-de-EaE"/>
+                        <constraint firstAttribute="bottom" secondItem="lYa-Co-NcZ" secondAttribute="bottom" constant="8" id="Ktr-BQ-8QF"/>
+                        <constraint firstItem="lYa-Co-NcZ" firstAttribute="leading" secondItem="OrA-LF-F54" secondAttribute="leading" id="N7b-Ol-bjk"/>
+                        <constraint firstItem="hYm-Hv-Lh8" firstAttribute="top" secondItem="L2C-C2-Rbz" secondAttribute="top" id="VDL-Nz-WEs"/>
+                        <constraint firstAttribute="trailing" secondItem="hYm-Hv-Lh8" secondAttribute="trailing" constant="16" id="gmQ-nV-Lfb"/>
+                        <constraint firstItem="OrA-LF-F54" firstAttribute="leading" secondItem="L2C-C2-Rbz" secondAttribute="trailing" constant="2" id="hgv-eY-O00"/>
+                        <constraint firstItem="hYm-Hv-Lh8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OrA-LF-F54" secondAttribute="trailing" constant="10" id="k0U-IH-Gkx"/>
+                        <constraint firstItem="lYa-Co-NcZ" firstAttribute="top" secondItem="OrA-LF-F54" secondAttribute="bottom" constant="2" id="qFm-CE-O3q"/>
+                        <constraint firstItem="L2C-C2-Rbz" firstAttribute="top" secondItem="Bin-8H-cc5" secondAttribute="top" constant="8" id="slB-2P-mRt"/>
+                        <constraint firstItem="L2C-C2-Rbz" firstAttribute="leading" secondItem="Bin-8H-cc5" secondAttribute="leading" id="xC0-Oh-4so"/>
+                        <constraint firstAttribute="trailing" secondItem="lYa-Co-NcZ" secondAttribute="trailing" constant="16" id="zOr-cN-SiX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Bin-8H-cc5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Vw8-Tt-0cS"/>
+                <constraint firstAttribute="bottom" secondItem="Bin-8H-cc5" secondAttribute="bottom" id="cUA-2Q-jZe"/>
+                <constraint firstAttribute="trailing" secondItem="Bin-8H-cc5" secondAttribute="trailing" id="jFB-wu-Fpe"/>
+                <constraint firstItem="Bin-8H-cc5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mIl-fy-R2W"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="numberLabel" destination="L2C-C2-Rbz" id="T1T-qY-PfQ"/>
+                <outlet property="priceLabel" destination="hYm-Hv-Lh8" id="s2j-kl-oVG"/>
+                <outlet property="subTitleLabel" destination="lYa-Co-NcZ" id="nCS-kW-Tui"/>
+                <outlet property="titleLabel" destination="OrA-LF-F54" id="enN-SL-nSQ"/>
+            </connections>
+            <point key="canvasLocation" x="37.681159420289859" y="-92.075892857142847"/>
+        </view>
+    </objects>
+</document>
